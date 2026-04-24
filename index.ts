@@ -1,8 +1,12 @@
-type Message = string | boolean
-type MyName = 'David' // literal type (The data must literally match a specific value)
+// type MyName = 'David' // literal type (The data must literally match a specific value)
+// type Message = number | boolean | MyName
 
-const message1: MyName = 'david'
-const message2: MyName = 'David'
+const message1 = 'hello'
+const message2: string = message1
+
+function print (data: string) {
+  console.log('data', data)
+}
 
 console.log(message1)
 console.log(message1)
