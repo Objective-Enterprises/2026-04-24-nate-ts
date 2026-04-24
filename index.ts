@@ -1,13 +1,12 @@
-// type MyName = 'David' // literal type (The data must literally match a specific value)
-// type Message = number | boolean | MyName
+// Next week, we're considering removing number support messages.
+// We haven't decided yet
 
-const message1 = 'hello'
-const message2: string = message1
+type Message = string
 
-function print (data: string) {
+const message1 = 10
+
+function print (data: Message) {
   console.log('data', data)
 }
 
-console.log(message1)
-console.log(message1)
-console.log(message1)
+print(message1)
